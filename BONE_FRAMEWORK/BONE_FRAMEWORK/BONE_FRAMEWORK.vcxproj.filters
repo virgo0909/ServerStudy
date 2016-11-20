@@ -60,6 +60,12 @@
     <Filter Include="소스 파일\02.GameOgject\03.Camera">
       <UniqueIdentifier>{4e08db00-0392-413d-ba4c-ad287ef2e5b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\03.Component\03.Transform2D">
+      <UniqueIdentifier>{a2d8fd74-892c-4cc4-97a1-e3b17922603e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\03.Component\04.Transform3D">
+      <UniqueIdentifier>{b353f99a-0b27-43ab-9e65-7a5e3c5a3d46}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -106,6 +112,15 @@
     </ClCompile>
     <ClCompile Include="Texture3D.cpp">
       <Filter>소스 파일\03.Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>소스 파일\03.Component\01.Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform2D.cpp">
+      <Filter>소스 파일\03.Component\03.Transform2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform3D.cpp">
+      <Filter>소스 파일\03.Component\04.Transform3D</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -159,6 +174,15 @@
     </ClInclude>
     <ClInclude Include="Texture3D.h">
       <Filter>소스 파일\03.Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>소스 파일\03.Component\01.Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform2D.h">
+      <Filter>소스 파일\03.Component\03.Transform2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform3D.h">
+      <Filter>소스 파일\03.Component\04.Transform3D</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

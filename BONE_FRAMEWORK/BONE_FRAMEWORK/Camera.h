@@ -1,24 +1,46 @@
 #pragma once
+#include "Common.h"
+#include "RenderManager.h"
 #include "Component.h"
+#include "GameObject.h"
 
 namespace BONE_FRAMEWORK
 {
-	class CCamera : public CComponent
+	class Camera : public CComponent
 	{
-	public:
-		CCamera();
-		~CCamera();
-
-	public:
-		BOOL Create(LPDIRECT3DDEVICE9 _pDev);
-		VOID FrameMove();
-
 	private:
+		Vector3 targetPosition;
+		Vector3 cameraUp;
+		Matrix viewMatrix;
+		Matrix projectionMatrix;
+	
+	private:
+		int ID;
+		float nearDistance;
+		float farDistance;
+		float fov;
+		int mode;
+		int width;
+		int height;
 
-		D3DXMATRIX		mView;
-		D3DXMATRIX		mPrj;
-		D3DXVECTOR3		vcEye;
-		D3DXVECTOR3		vcLook;
-		D3DXVECTOR3		vcUp;
+	public:
+		Camera(int _ID, Vector3 _cameraUp, int _width, int _height, float _far, float _near, float _fov);
+
+		int GetID();
+
+		void SetFov(float _fov);
+		float GetFov();
+
+		void SetNearDistance(float _near);
+		float GetNearDistance();
+
+		void SetFarDistance(float _far);
+		float GetFarDistance();
+
+		Vector3 GetCameraUp();
+		void SetTargetPosition(Vector3 _targetPosition);
+		void SetTargetPosition(float x, float y, float z);
+		Vector3 GetTargetPosition();
+		Matrix GetViewMatrix(CGameObject* _obj);
 	};
 }

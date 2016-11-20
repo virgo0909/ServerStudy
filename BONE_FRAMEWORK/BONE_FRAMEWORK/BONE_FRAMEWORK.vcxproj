@@ -139,6 +139,7 @@
   <ItemGroup>
     <ClCompile Include="Back.cpp" />
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Collider.cpp" />
     <ClCompile Include="Collision.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="GameObject.cpp" />
@@ -153,10 +154,13 @@
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Texture3D.cpp" />
+    <ClCompile Include="Transform2D.cpp" />
+    <ClCompile Include="Transform3D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Back.h" />
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="Collider.h" />
     <ClInclude Include="Collision.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="Component.h" />
@@ -172,6 +176,8 @@
     <ClInclude Include="SmartPointer.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="Texture3D.h" />
+    <ClInclude Include="Transform2D.h" />
+    <ClInclude Include="Transform3D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
